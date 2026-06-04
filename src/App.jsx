@@ -522,11 +522,16 @@ Free Towing • Same-Day Pickup • Any Condition Accepted
               </p>
 
               <a
-                href={`tel:${phone}`}
-                className="bg-orange-500 hover:bg-orange-400 transition-all duration-300 text-black text-center font-black text-xl px-8 py-5 rounded-2xl"
-              >
-                CALL NOW
-              </a>
+  href={`tel:${phone}`}
+  onClick={() => {
+    window.gtag?.('event', 'conversion', {
+      send_to: 'AW-16568342265/8-e7JCuHzrQcEPmts9w9'
+    });
+  }}
+  className="bg-orange-500 hover:bg-orange-400 transition-all duration-300 text-black text-center font-black text-xl px-8 py-5 rounded-2xl"
+>
+  CALL NOW
+</a>
 
             </div>
 
